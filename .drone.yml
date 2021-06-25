@@ -8,6 +8,7 @@ platform:
 steps:
 - name: test
   image: golang:1.14.4
+  detach: true
   commands:
   - go build
   - go test
